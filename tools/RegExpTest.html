@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>正则测试</title>
+    <script type="text/javascript" src="../web/jquery-1.8.3.js"></script>
+</head>
+<body>
+正则： <textarea id="regex"></textarea>
+测试串：<textarea id="teststr"></textarea>
+<select>
+    <option value="1">match</option>
+</select>
+<input type="button" id="btn" value="执行" onclick="Start()">
+
+<script type="text/javascript">
+    (function () {
+        var exec=this;
+         exec = function (reg, str, type) {
+            var r = new RegExp(reg, gmi);
+            var matchs = {};
+            switch (type) {
+                case "1":
+                    matchs = r.exec(str);
+                    break;
+                default:
+                    document.write("I'm looking forward to this weekend!")
+            }
+             return matchs;
+        };
+    }).call(this);
+    function Start(){
+       var result= exec($("#regex").val(),$("#teststr").val(),"1");
+        console.log(result);
+    }
+</script>
+</body>
+</html>
