@@ -16,12 +16,10 @@
                     };
                     if (window.location.hash) { redirect();};
                     window.onhashchange = function () {redirect(); };
+
                 },
                 Stop:function () {
-
-                },
-                Pause:function () {
-
+                    window.onhashchange=null;
                 }
             };
         }
