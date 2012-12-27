@@ -1,0 +1,1 @@
+uglifyjs2 route.js -o ../lib/route.min.js
