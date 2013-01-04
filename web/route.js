@@ -14,8 +14,10 @@ var route=JMvc.Route.Create({
     },
     product:function(){
         console.log("产品列表");
-        document.getElementById("route").innerHTML="<ul><li>iphone</li></ul>";
 
+        $.get("product.html",function(data){
+            document.getElementById("route").innerHTML=data;
+        })
 
     }
 }).Start();

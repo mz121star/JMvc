@@ -26,6 +26,6 @@ describe("JMvc route", function() {
         window.location.hash="!/about";
         var html=document.body.innerHTML;
         console.log("neirong:"+html);
-        expect(html).toEqual("<h1>dalian</h1>");
+        expect(html).toEqualText("dalian");
     });
 });
