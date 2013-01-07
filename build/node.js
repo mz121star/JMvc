@@ -2,7 +2,7 @@ var fs = require('fs');
 var http = require('http');
 
 var _path = "index.html";
-var _basePath = "e:/js/mvc"
+var _basePath = "E:/CodeSource/FrontEndDevlopment/JMvc"
 
 
 http.createServer(function (req, res) {
@@ -21,7 +21,7 @@ http.createServer(function (req, res) {
         responseHttp(res, type, data);
     });
 
-}).listen(1337, '127.0.0.1');
+}).listen(1337, '192.168.1.103');
 console.log('Server running at http://127.0.0.1:1337/');
 
 //http response
