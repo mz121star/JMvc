@@ -19,7 +19,7 @@ var http = require("http");
                 res.on('data',function (d) {
                     for (i = 0, n = scuessCallbacks.length; i < n; i++) {
                         scuessCallbacks[i](d);
-                        console.log("scuess lenght:"+scuessCallbacks.length);
+                      //  console.log("scuess lenght:"+scuessCallbacks.length);
                     }
                 }).on('error', function (e) {
                         for (i = 0, n = errorCallbacks.length; i < n; i++) {

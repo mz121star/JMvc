@@ -21,8 +21,8 @@ http.createServer(function (req, res) {
         responseHttp(res, type, data);
     });
 
-}).listen(1337, '192.168.1.103');
-console.log('Server running at http://127.0.0.1:1337/');
+}).listen(1666, '192.168.1.103');
+console.log('Server running at http://127.0.0.1:1666/');
 
 //http response
 var responseHttp = function (res, type, data) {
