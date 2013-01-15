@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83c6cca9-a657-486f-a18a-75d9d55af4f8" name="Default" comment="ide">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/resut.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/runserver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/spider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resut.txt" />
-      <change type="DELETED" beforePath="E:\js\mvc\build\node.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\js\mvc\build\spider" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Mhttp.js" afterPath="$PROJECT_DIR$/build/Mhttp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/RegExpTest.html" afterPath="$PROJECT_DIR$/tools/RegExpTest.html" />
+    <list default="true" id="83c6cca9-a657-486f-a18a-75d9d55af4f8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +37,7 @@
       <file leaf-file-name="spider.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/spider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="0" selection-end="769" vertical-scroll-proportion="0.48866498">
+            <state line="5" column="15" selection-start="188" selection-end="188" vertical-scroll-proportion="0.20151134">
               <folding />
             </state>
           </provider>
@@ -93,8 +85,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="228" />
-    <option name="y" value="339" />
+    <option name="x" value="235" />
+    <option name="y" value="69" />
     <option name="width" value="1070" />
     <option name="height" value="797" />
   </component>
@@ -433,7 +425,11 @@
       <created>1357606993465</created>
       <updated>1357606993465</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="spider">
+      <created>1358234099931</created>
+      <updated>1358234099931</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -457,9 +453,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="228" y="339" width="1070" height="797" extended-state="0" />
+    <frame x="235" y="69" width="1070" height="797" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.49426112" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -474,7 +471,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6703911" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -517,7 +513,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="ide" />
+    <option name="LAST_COMMIT_MESSAGE" value="spider" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -536,6 +532,7 @@
     <MESSAGE value="add node server  execute the code" />
     <MESSAGE value="node http module" />
     <MESSAGE value="ide" />
+    <MESSAGE value="spider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -630,7 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/spider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="0" selection-end="769" vertical-scroll-proportion="0.48866498">
+        <state line="5" column="15" selection-start="188" selection-end="188" vertical-scroll-proportion="0.20151134">
           <folding />
         </state>
       </provider>
