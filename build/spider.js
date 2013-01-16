@@ -32,27 +32,36 @@ function getPic(url, callback) {
             console.log(imgs[i]);
             allImgs.push(imgs[i]);
         }
+        console.log("group complete!")
         callback();
     })
 }
 function DownLoadPic(file_url) {
+     var count = allImgs.length;
     for (var i = 0, l = allImgs.length; i < l; i++) {
         file_url=allImgs[i];
         if(file_url.indexOf("http")<0) return
         var file_name = url.parse(file_url).pathname.split('/').pop();
 
-        http.get(file_url, function (res) {
+        mhttp.get(file_url).done(function (data) {
             var mfile = fs.createWriteStream(DOWNLOAD_DIR + file_name);
-
-            res.on('data',function (data) {
-                mfile.write(data);
-            }).on('end',function () {
-
-                    mfile.end();
-                    console.log(file_name + ' downloaded to ' + DOWNLOAD_DIR);
-                }).on('error', function (e) {
-                    console.log(e);
-                });
+            mfile.write(data);
         });
+
+//        http.get(file_url, function (res) {
+//            var mfile = fs.createWriteStream(DOWNLOAD_DIR + file_name);
+//            count--;
+//            res.on('data',function (data) {
+//                mfile.write(data);
+//            }).on('end',function () {
+//                    if (count === 0) {
+//                        console.log("download !");
+//                    }
+//                    mfile.end();
+//                    console.log(file_name + ' downloaded to ' + DOWNLOAD_DIR);
+//                }).on('error', function (e) {
+//                    console.log(e);
+//                });
+//        });
     }
 }
