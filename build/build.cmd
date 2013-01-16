@@ -1,1 +1,1 @@
-uglifyjs2 route.js -o ../lib/route.min.js
+uglifyjs2 jasync.js -o ../lib/jasync.min.js -c -m
