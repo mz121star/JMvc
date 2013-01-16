@@ -51,9 +51,8 @@ function printnum(num) {
 /**
  *  test case "when test" prepare FAILED!
  *  */
-var promise1=printnum(100);
-var promise2=printnum(1020);
-jsync.when(promise1,promise2) .then(function(a,b){
+
+jsync.when(printnum(100),printnum(1020)) .then(function(a,b){
     console.log("all ops complete " +a+b);
 });
 

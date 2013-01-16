@@ -18,22 +18,24 @@
             this.alwaysCallback;
             this.stats;
         },
-        initjasync = function (callbacks) {
+        initjasync = function () {
+            var callbacks = Array.prototype.slice.apply(arguments);
             var _tempj = new jasync();
-            for(var i= 0,l=callbacks.length;i<l;i++){
-                if(callbacks[i]!=="undefined"&& typeof callbacks[i]==="function"){
-
+            for (var i = 0, l = callbacks.length; i < l; i++) {
+                if (callbacks[i] !== "undefined") {
+                    callbacks[i].then(function () {
+                        console.log("over！" + i);
+                    })
                 }
             }
             return _tempj;
-        },_invokeAlways = function (value) {
+        }, _invokeAlways = function (value) {
             if (this.alwaysCallback !== "undefined" && typeof  this.alwaysCallback === "function") {
                 this.alwaysCallback(value);
             }
         };
     jasync.when = function () {
-        var callbacks = Array.prototype.slice.apply(arguments);
-        return  initjasync(callbacks);
+        return  initjasync(arguments);
     };
     jasync.prototype = {
         then:function (onresolved, onreject) {
@@ -51,7 +53,7 @@
         },
         reject:function (value) {
             for (var i = 0, l = this.rejectCallbacks.length; i < l; i++) this.rejectCallbacks[i](value);
-            _invokeAlways.call(this,value);
+            _invokeAlways.call(this, value);
         }
     };
     /*export jasync to window or server */
